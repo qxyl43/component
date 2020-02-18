@@ -8,5 +8,5 @@
 4. pwdString js实现字符串加解密
 5. touch 移动端触摸组件，快速判断用户手势上滑活下滑
 6. wechat 微信开发的相关组件，如前端分享、授权的封装
-
-
+7. 翻页Js组件
+<img src='./img/turnbook.jpg' width='100px' height='100px'>
