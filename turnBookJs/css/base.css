@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/*reset start*/
+*,ul.dl,ol,h1,h2,h3,h4,h5,h6,p{margin:0;padding:0;}
+html{font-family:'PingFang SC'; -webkit-font-smoothing: antialiased;}
+a{text-decoration:none;  color:#2a2a2a;}
+strong,b,h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+i,em{font-style:normal;}
+a img{border:0;}
+li{list-style:none;  }
+table{border-collapse:collapse;}
+th,td{border:none; padding:0;}
+
+/*input,textarea{outline:none; -webkit-appearance: none;}*/
+img{border:none;}
+input{outline:medium;}
+input, textarea, select, button { font-family:'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei UI', 'Microsoft Yahei', 微软雅黑, 'Segoe UI', Tahoma, 宋体b8b体, SimSun, sans-serif;}
+
+/*浮动*/
+.fl{float:left;}
+.fr{float:right;}
+
+/*清除浮动*/
+.clearfix:after{display:block; content:''; clear:both;}
+.clearfix{zoom:1;}
+.clearf{zoom:1}
+.clearf:after{ clear:both; overflow:hidden;zoom:1; height:0px;  font-size:0; line-height:0;content:".";display:block;}
+
+body{overflow:hidden;}
+
+/*文本框的初始值*/
+/*placeholder*/
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color: #ccc;  }
+::-moz-placeholder { /* Mozilla Firefox 19+ */color: #ccc;}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {color: #ccc;}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {color: #ccc;}
+input::-ms-clear, ::-ms-reveal{display: none;}
+
+/*滚动条样式*/
+::-webkit-scrollbar-track-piece{background-color:#EEF0F1;-webkit-border-radius:0;}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-thumb{background-color:#B2B9C9;}
+::-webkit-scrollbar-thumb:hover{background-color:#B2B9C9;}
+::-webkit-scrollbar-arrow {color:#F00;background-color:#0F0;}
+
+
+/*蒙版阴影*/
+.book-mask{background-color: rgba(0,0,0,0.5); width: 100%; height: 100%; position:absolute; display: block; top:0; left:0;}
+.book-mask.on-mask{display: none;}
+
+/*.banner_title{width:664px; height:254px; background:url(../images/title.png) no-repeat; position:absolute; left:50%; margin-left:-332px; top:107px;}*/
+.book-bg{position:absolute; left:50%; top:50%; margin-top: -267px; margin-left:-366.5px; width:733px; height:534px;background:url(../images/shu1.png) no-repeat;z-index:2;}
+.book_box{position:absolute; left:50%; top:50%; margin-top: -267px; margin-left:-366.5px; width:733px; height:534px; z-index: 99}
+.book_box .book_content{/*width:733px !important; height:534px !important;*/ position:absolute;  z-index:2; left:36px;}
+
+/*翻页的*/
+.page_d{width:329px; height:531px; background:url(../images/page_d.png) no-repeat;}
+.cover{width:329px ; height:531px ; background:red; position:absolute; top:0; /*left:33px; */background:url(../images/page_L1.png) no-repeat;}
+.Shadowe{width:329px; height:531px; background:red; position:absolute; top:3px; right:32px; background:url(../images/page_d.png) no-repeat;}
+
+/*页码*/
+.page-num{width: 240px; position:absolute; top:60px; left:36px;color:#A4B4FF; font-size: 22px; }
+.page-num u{font-size: 36px;color:#193ADE; font-weight: bold; text-decoration: none;}
+
+/*上一题下一题*/
+.book_box .pre_page{ cursor: pointer; position:absolute; bottom:23px; left:35px; color:#193ADE; font-size:14px;}
+.book_box .next_page{cursor: pointer; position:absolute; bottom:23px; right:45px; color:#fff; font-size:14px; 
+  width: 100px; height: 37px; line-height: 37px; text-align:center;background:url(../images/next_page.png) no-repeat;}
+.book_box .next_page:hover{background:url(../images/next_page.png) no-repeat;}
+
+
+/*其他配件*/
+.book-close{width: 43px; height: 43px; position: absolute; top:-43px; right:-102px; display: block; background:url(../images/book-close.png) no-repeat; z-index: 19999;-webkit-background-size: 100% 100%;
+background-size: 100% 100%;}
+.book-man{width: 105px; height: 262px; display: inline-block;background:url(../images/book-man.png) no-repeat; -webkit-background-size: 100% 100%;
+background-size: 100% 100%; position: absolute; bottom:-20px;right:-52px; z-index: 8}
+.book-brand{width: 191px; height: 235px; display: inline-block;background:url(../images/book-brand.png) no-repeat; -webkit-background-size: 100% 100%;
+background-size: 100% 100%; position: absolute; bottom:0;left:-106px; z-index: 8}
+.book-tree{width: 168px; height: 386px; display: inline-block;background:url(../images/book-tree.png) no-repeat; -webkit-background-size: 100% 100%;
+background-size: 100% 100%; position: absolute; bottom:0;left:-169px; z-index: -1}
+
+/*题目与问题*/
+.w_title{font-size:20px;color:#193ADE; text-align:center; text-align:left; margin-bottom: 19px; font-weight: bold; }
+.book-block{position:absolute; top:124px; left:36px;width: 260px; max-height: 340px; overflow-y: auto;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box; padding:0 5px;}
+.book-ul li label{ padding:10px 30px 10px 14px; font-size: 16px; color: #333333; display: block;cursor: pointer;}
+.book-ul li label span{margin-right: 5px;}
+.book-ul li label input{opacity: 0; width: 1px;}
+.book-ul li textarea{box-shadow: 0 0 4px 0 #BFCCF8; width: 100%; padding:10px; border:0; background-color: #fff; -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box; color: #333;
+box-sizing: border-box; margin-top: 10px;}
+.book-ul li.on label{box-shadow: 0 0 4px 0 #BFCCF8;border-radius: 4px;background:#fff url(../images/ok.png) no-repeat 95% center;}
+.book-textarea textarea{box-shadow: 0 0 4px 0 #BFCCF8; width: 100%; padding:10px; border:0; background-color: #fff; -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box; color: #333}

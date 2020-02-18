@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body >
+<div class="book-open">因为书的背景是透明了，所以能看到这个按钮，这个按钮是用来打开书本</div>
+<div class="book-mask">
+  <div class="book_box" style="z-index: 99">
+    <!-- 小配件 begin-->
+    <div class="book-close"></div>
+    <div class="book-man"></div>
+    <div class="book-brand"></div>
+    <div class="book-tree"></div>
+    <!-- 小配件 end-->
+    <div class="book-bg"></div>
+    <div class="book_content flipbook"></div>
+    
+    <div id="cover" class="cover">
+        <!-- 用来算翻页的宽度的 -->
+    </div>
+     
+    <!-- <div class="Shadowe">
+        <div class="book_text"></div>
+    </div> -->
+  </div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/turn.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
