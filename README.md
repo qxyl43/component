@@ -10,3 +10,4 @@
 6. wechat 微信开发的相关组件，如前端分享、授权的封装
 7. 翻页Js组件
 <img src='https://github.com/qxyl43/component/edit/master/./img/turnbook.jpg' width='100' height='100'>
+![Alt text](https://github.com/qxyl43/component/edit/master/./img/turnbook.jpg)
